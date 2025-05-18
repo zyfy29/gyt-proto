@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package legacy;
+
+service LegacyService {
+  rpc GetNextLegacy (LegacyRequest) returns (LegacyResponse) {}
+}
+
+message LegacyRequest {
+  // リクエストは空です
+}
+
+message LegacyResponse {
+  double value = 1;
+}
