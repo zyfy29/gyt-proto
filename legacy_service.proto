@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-package legacy;
-
 service LegacyService {
   rpc GetNextLegacy (LegacyRequest) returns (LegacyResponse) {}
 }
