@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+option go_package = "github.com/zyfy29/gyt-proto/latency;latency";
+
 service LegacyService {
   rpc GetNextLegacy (LegacyRequest) returns (LegacyResponse) {}
 }
