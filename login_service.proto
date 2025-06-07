@@ -9,6 +9,14 @@ message LoginResponse {
   map<string, string> header = 1;
 }
 
+message TokenResponse {
+  string token = 1;
+}
+
 service LoginService {
   rpc Login(LoginRequest) returns (LoginResponse);
+}
+
+service TokenService {
+  rpc GetPocketToken(LoginRequest) returns (TokenResponse);
 }
